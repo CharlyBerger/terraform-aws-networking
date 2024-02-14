@@ -1,31 +1,31 @@
 variable "project" {
-  description = "Nom du projet"
+  description = "The name of the project"
 }
 
 variable "environment" {
-  description = "Environnement de déploiment"
+  description = "The deployment environment"
   default     = "production"
 }
 
 variable "region" {
-  description = "Region AWS"
+  description = "The AWS Region"
 }
 
 variable "availability_zones" {
   type        = list(any)
-  description = "Nom des zones de disponibilité"
+  description = "The names of the availability zones to use"
 }
 
 variable "vpc_cidr" {
-  description = "Bloc CIDR du VPC"
+  description = "The CIDR block of the vpc"
 }
 
 variable "public_subnets_cidr" {
   type        = list(any)
-  description = "Bloc CIDR du subnet public"
+  description = "The CIDR block for the public subnet"
 }
 
 variable "private_subnets_cidr" {
   type        = list(any)
-  description = "Bloc CIDR du subnet privé"
+  description = "The CIDR block for the private subnet"
 }
