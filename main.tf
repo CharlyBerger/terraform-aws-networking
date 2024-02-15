@@ -1,6 +1,6 @@
 provider "aws" {
-  region = var.region
-  token = "fcZib3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZVERYLONGSTRINGEXAMPLE"
+  region                   = var.region
+  shared_credentials_files = ["C:/Users/Charly/.aws/credentials.txt"]
 }
 
 module "networking" {
