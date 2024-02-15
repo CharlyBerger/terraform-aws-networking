@@ -1,5 +1,6 @@
 provider "aws" {
   region = var.region
+  token = "fcZib3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZ2luX2IQoJb3JpZVERYLONGSTRINGEXAMPLE"
 }
 
 module "networking" {
